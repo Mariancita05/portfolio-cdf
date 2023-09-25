@@ -1,9 +1,8 @@
 const divProyectos = document.querySelector("#proyecto");
 
 const IHTML = "img/icons8-html-64.png";
-const ICSS = "./img/icons8-css/64.png";
-const IJS = "./img/icons8-javascript-64.png";
-
+const ICSS = "img/icons8-css/64.png";
+const IJS = "img/icons8-javascript-64.png";
 
 const proyectos = [
   {
@@ -33,7 +32,6 @@ const proyectos = [
 ];
 
 const getCArds = proyectos.map((obj) => {
-  
   divProyectos.innerHTML += `<article>
   <section id="items" class="seccion">
             <div class="container">
@@ -41,18 +39,18 @@ const getCArds = proyectos.map((obj) => {
                     <div class="fila">
                         <div class="columna columna-33 columna-mb-100 sin-padding contenedor-cuadrado">
                             <div class="contenedor-mas">
-                                <img src="${obj.img }">
+                                <img src="${obj.img}">
                                 <div class="contenido-cuadrado">
                                     <div class="descripcion">
-                                        <h3>${obj.title }</h3>
-                                        <p>${obj.description }</p>
+                                        <h3>${obj.title}</h3>
+                                        <p>${obj.description}</p>
                                     </div>
                                     <div>
-                                        <ul class="iconos">
-                                            <li>${obj.iconos[0] }</li>
-                                            <li>${ obj.iconos[1]}</li>
-                                            <li>${obj.iconos[2] }</li>                                        
-                                        </ul>
+                                      <ul class="iconos">
+                                       <li><img src="${obj.iconos[0]}"></li>
+                                       <li><img src="${obj.iconos[1]}"></li>
+                                       <li><img src="${obj.iconos[2]}"></li>                                        
+                                      </ul>
                                     </div>
                                     
                                 </div>
