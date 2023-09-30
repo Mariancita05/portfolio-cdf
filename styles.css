@@ -292,8 +292,11 @@ section
     overflow: hidden;
     cursor: pointer;
 }
+.ico-proyect img{
+    width: 30px;
+}
 
-.contenedor-cuadrado img
+.contenedor-cuadrado .img-proyect
 {
     position: absolute;
     top: 0;
@@ -305,7 +308,7 @@ section
     transition: all 0.5s ease;
 }
 
-.contenedor-cuadrado:hover img
+.contenedor-cuadrado:hover .img-proyect
 {
     transform: scale(1.5) rotateY(180deg);
     opacity: 0.75;

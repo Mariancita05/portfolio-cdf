@@ -1,7 +1,7 @@
 const divProyectos = document.querySelector("#proyecto");
 
 const IHTML = "img/icons8-html-64.png";
-const ICSS = "img/icons8-css/64.png";
+const ICSS = "img/icons8-css-64.png";
 const IJS = "img/icons8-javascript-64.png";
 
 const proyectos = [
@@ -14,19 +14,19 @@ const proyectos = [
   {
     img: "./img/verte_divina.jpg",
     title: "Verte Divina - Estetica",
-    description: "Este es mi primer proyecto en el curso de programación",
+    description: "Este es mi segundo proyecto en el curso de programación",
     iconos: [IJS, IHTML, ICSS],
   },
   {
     img: "./img/caminos.jpg",
     title: "Elige tu propia aventura",
-    description: "Este es mi primer proyecto en el curso de programación",
+    description: "Este es mi tercer proyecto en el curso de programación",
     iconos: [IHTML, ICSS],
   },
   {
     img: "./img/mendoza.jpg",
     title: "Lugares turisticos de Mendoza",
-    description: "Este es mi primer proyecto en el curso de programación",
+    description: "Este es mi cuarto proyecto en el curso de programación",
     iconos: [IHTML, ICSS],
   },
 ];
@@ -39,13 +39,13 @@ const getCArds = proyectos.map((obj) => {
                     <div class="fila">
                         <div class="columna columna-33 columna-mb-100 sin-padding contenedor-cuadrado">
                             <div class="contenedor-mas">
-                                <img src="${obj.img}">
+                                <img class='img-proyect' src="${obj.img}">
                                 <div class="contenido-cuadrado">
                                     <div class="descripcion">
                                         <h3>${obj.title}</h3>
                                         <p>${obj.description}</p>
                                     </div>
-                                    <div>
+                                    <div class='ico-proyect'>
                                       <ul class="iconos">
                                        <li><img src="${obj.iconos[0]}"></li>
                                        <li><img src="${obj.iconos[1]}"></li>
