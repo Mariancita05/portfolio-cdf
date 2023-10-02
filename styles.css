@@ -296,6 +296,10 @@ section
     width: 30px;
 }
 
+.ico-proyect:hover img{
+    transform: scale(1.5);
+}
+
 .contenedor-cuadrado .img-proyect
 {
     position: absolute;
