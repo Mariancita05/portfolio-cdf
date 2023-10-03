@@ -32,7 +32,7 @@ const proyectos = [
 ];
 
 const getCArds = proyectos.map((obj) => {
-  const iconosHTML = obj.iconos.map(icono => `<li class="icono"><img src="${icono}"></li>`).join(''); 
+  const iconosHTML = obj.iconos.map(icono => `<li class="icono ico-proyect"><img src="${icono}"></li>`).join(''); 
   divProyectos.innerHTML += `<article>
   <section id="items" class="seccion">
             <div class="container">
@@ -46,7 +46,7 @@ const getCArds = proyectos.map((obj) => {
                                         <h3>${obj.title}</h3>
                                         <p>${obj.description}</p>
                                     </div>
-                                    <div class='ico-proyect'>
+                                    <div >
                                       <ul class="iconos">
                                       ${iconosHTML}                                      
                                       </ul>
